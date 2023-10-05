@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Fine Modulo - JAVASCRIPT ADVANCED - EPICODE</title>
+    <link rel="stylesheet" href="./admin.css" />
+    <link rel="stylesheet" href="mediaqueries.css">
+  </head>
+  <body>
+    <header>
+        <nav>
+          <div class="navbar-container">
+            <div class="navbar-logo">
+              <a href="#">
+                <img src="/ADMIN/assets/smartphone-svgrepo-com.svg" alt="smartphone-logo" />
+              </a>
+              <div class="logo-text">
+                <h1>TechPhone</h1>
+                <p>Admin Page</p>
+              </div>
+            </div>
+            <div class="icons-container">
+              <ion-icon name="search-outline"></ion-icon>
+              <ion-icon name="cart-outline"></ion-icon>
+              <ion-icon name="person-outline"></ion-icon>
+              <ion-icon name="menu-outline"></ion-icon>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+    <main>
+        <section>
+          <div class="container">
+            <h2>Add New Product</h2>
+            <div class="form-container">
+              <form id="product-form"> 
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter product name" required>
+                </div>
+                <div class="form-group">
+                  <label for="brand">Brand</label>
+                  <input type="text" id="brand" name="brand" placeholder="Enter brand name" required>
+                </div>
+                <div class="form-group">
+                  <label for="images">Images</label>
+                  <input type="url" id="images" name="images" placeholder="Enter image URL" required>
+                </div>
+                <div class="form-group">
+                  <label for="description">Description</label>
+                  <input type="text" id="description" name="description" placeholder="Enter product description" required>
+                </div>
+                <div class="form-group">
+                  <label for="price">Price $</label>
+                  <input type="number" id="price" name="price" placeholder="Enter product price" required>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Submit">
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1>TechPhone</h1>
+                <p>© 2023 TechPhone. All Rights Reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            
+        </div>
+    </footer>
+
+    <!--My script-->
+    <script src="./admin.js"></script>
+  </body>
+</html>

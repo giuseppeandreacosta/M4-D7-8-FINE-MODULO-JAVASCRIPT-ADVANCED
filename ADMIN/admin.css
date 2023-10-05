@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Roboto:ital,wght@0,400;1,500&display=swap');
+
+:root {
+    --text-color:rgba(128, 128, 128, 0.578);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+/* Header-Navbar */
+
+header nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-logo img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.logo-text h1 {
+    font-size: 24px;
+    transition: color 0.3s linear;
+}
+
+.logo-text p {
+    font-size: 14px;
+    color: grey;
+}
+
+.navbar-logo:hover h1 {
+    color: gold;
+    cursor: pointer;
+}
+
+.icons-container ion-icon {
+    font-size: 30px;
+    transition: color 0.3s linear;
+    cursor: pointer;
+}
+
+.icons-container ion-icon:hover {
+    color: gold;
+}
+
+
+/* End Header-Navbar */
+
+
+/* Main Section Container */
+
+main {
+    min-height: 500px;
+    margin: 100px 50px;
+}
+
+section {
+    width: 100%;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container > h2 {
+    margin-bottom: 10px;
+}
+
+.form-container {
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Footer */   
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+}
+
+.footer-container h1:hover {
+    color: gold;
+    transition: color 0.3s linear;
+    cursor: pointer;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
