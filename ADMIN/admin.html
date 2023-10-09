@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Commerce Fine Modulo - JAVASCRIPT ADVANCED - EPICODE</title>
     <link rel="stylesheet" href="./admin.css" />
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="/ADMIN/mediaqueries.css">
   </head>
   <body>
     <header>
@@ -56,13 +56,32 @@
                   <label for="price">Price $</label>
                   <input type="number" id="price" name="price" placeholder="Enter product price" required>
                 </div>
-                <div class="form-group">
-                  <input type="submit" value="Submit">
-                </div>
+                <div class="form-group buttons">
+                  <button type="submit" id="submit-button" class="submit">Submit</button>
+              </div>
               </form>
             </div>
           </div>
+          <div class="card">
+            <table id="product-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Brand</th>
+                        <th>Image</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Edit</th>
+                        <th>Cancel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Le righe della tabella saranno inserite dinamicamente qui -->
+                </tbody>
+            </table>
+        </div>
         </section>
+       
       </main>
       <footer>
         <div class="footer-container">
@@ -82,5 +101,7 @@
 
     <!--My script-->
     <script src="./admin.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

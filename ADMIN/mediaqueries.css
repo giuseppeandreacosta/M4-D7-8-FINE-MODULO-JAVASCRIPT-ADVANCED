@@ -1,4 +1,3 @@
-
 /* Media Query per Schermi Piccoli (max larghezza 767px) */
 @media screen and (max-width: 767px) {
     header nav {
@@ -21,13 +20,21 @@
         font-size: 24px;
     }
 
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-container,
     .card {
         width: 100%;
         margin: 10px 0;
+        overflow-x: auto;
     }
 
     .card img {
-        height: 200px;
+        height: auto;
+        max-width: 100%;
     }
 
     .footer-container {
@@ -53,24 +60,35 @@
         font-size: 28px;
     }
 
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-container,
     .card {
         width: 100%;
         margin: 10px 0;
+        overflow-x: auto;
     }
 
     .card img {
-        height: 200px;
+        height: auto;
+        max-width: 100%;
     }
 }
 
-/*  schermi più grandi  */
+/* Schermi più grandi (min-width: 992px) */
 @media (min-width: 992px) {
     .card {
         width: 300px;
         height: 450px;
+        overflow-x: auto;
     }
 
     .card img {
         height: 250px;
+        width: 100%;
+        object-fit: cover;
     }
 }
