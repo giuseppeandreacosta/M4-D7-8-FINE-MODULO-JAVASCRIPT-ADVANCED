@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     const form = document.querySelector("#product-form");
     const tableBody = document.querySelector("#product-table tbody");
     const url = 'https://striveschool-api.herokuapp.com/api/product/';
-    const token = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTFmMDVlNWM3Mjg4NzAwMTg4N2ZmMGEiLCJpYXQiOjE2OTY1MzE5NDIsImV4cCI6MTY5Nzc0MTU0Mn0.6cs0ARUPsTkgRJrbj2X19YHkWGhDG-2ZheNq7747oEE';
+    const token = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTM3ZmQ2Mzc3Y2RhYTAwMTQ2ZGYzOGMiLCJpYXQiOjE2OTgxNjgxNjMsImV4cCI6MTY5OTM3Nzc2M30.SeuQbMdwLd1DxEStBlCpKM99h8rDmJqHZq-7-BuZzXg';
 
     form.addEventListener("submit", async function (event) {
         event.preventDefault();
